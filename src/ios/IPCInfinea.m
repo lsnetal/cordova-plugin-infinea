@@ -62,14 +62,14 @@
 
 - (void)bluetoothDeviceConnected:(NSString *)address
 {
-    NSString *func=[NSString stringWithFormat:@"%@(%d,%@);",[cb valueForKey:@"bluetoothStatusCallback"],which, @"true"];
+    NSString *func=[NSString stringWithFormat:@"%@(%d,%@);",[cb valueForKey:@"bluetoothStatusCallback"],address, @"true"];
     
     [(UIWebView*)super.webView stringByEvaluatingJavaScriptFromString:func];
 }
 
 - (void)bluetoothDeviceDisconnected:(NSString *)address
 {
-    NSString *func=[NSString stringWithFormat:@"%@(%d,%@);",[cb valueForKey:@"bluetoothStatusCallback"],which, @"false"];
+    NSString *func=[NSString stringWithFormat:@"%@(%d,%@);",[cb valueForKey:@"bluetoothStatusCallback"],address, @"false"];
     
     [(UIWebView*)super.webView stringByEvaluatingJavaScriptFromString:func];
 }
