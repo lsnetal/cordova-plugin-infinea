@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-infinea" version="0.2">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-infinea" version="0.4">
     <name>Infinea</name>
     <description>Infinite Peripherals - ipcmobile.com</description>
     <license>Apache 2.0</license>
     <keywords>IPC,scanners</keywords>
-    <repo>https://bitbucket.org/bradipcprint/ipcinfinea.git</repo>
+    <repo>https://github.com/lsnetal/cordova-plugin-infinea.git</repo>
     
     <js-module src="www/IPC-Infinea.js" name="Infinea">
         <clobbers target="Infinea" />

@@ -256,7 +256,7 @@ var Infinea = {
         exec(success, failure, 'Infinea', 'barCodeSetParams', [ list ]);
     },
 
-    printDemo: function () {
+    printDemo: function (success, failure) {
         cordova.exec(success, failure, 'Infinea', 'printDemo', []);
     }
 };
