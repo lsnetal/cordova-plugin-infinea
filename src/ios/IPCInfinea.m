@@ -440,6 +440,7 @@
 
 - (void)printDemo:(CDVInvokedUrlCommand*)command
 {
+    CDVPluginResult* pluginResult = nil;
     NSError *err;
 
     @try {
